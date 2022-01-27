@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap");
+
+:root {
+  --themes-bg: #fcfcdf;
+  --apply-btn-bg: #063970;
+  --themes-head: #000;
+}
+
+.themes-bg {
+  background: var(--themes-bg);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.themes-head {
+  font: normal normal 48px "Josefin Sans", "sans-serif";
+  padding-top: 2rem;
+  color: var(--themes-head);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: center;
+  z-index: 2;
+}
+
+.themes {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 7rem;
+  z-index: 1;
+}
+
+.themes-row {
+  display: flex;
+  justify-content: center;
+}
+
+.theme-card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  /* border-radius: 10px; */
+  height: 250px;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.theme-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.theme-card-selected {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  height: 250px;
+  border: 2px solid blue;
+  cursor: pointer;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.selected {
+  border: solid 3px #4b148c;
+}
+
+.apl-row {
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.apl-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apl-btn {
+  font: normal normal 18px "Josefin Sans", "Sans-serif";
+  height: 35px;
+  padding: 0 2rem;
+  color: #fff;
+  background-color: var(--apply-btn-bg);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  float: right;
+}

@@ -43,7 +43,8 @@ const Tasks = _ => {
 
   return (
     <div className="tasks-bg">
-      <Modal title={<div className="tasks-head">
+      <div className='personalize-btn-div'><Link to="/themes"><Button className='personalize-btn'>Personalize</Button></Link></div>
+      <Modal className='edit-task-modal' closeIcon={<i className='fas fa-times' />} title={<div className="tasks-head">
         Edit Task
       </div>}
         footer={null}

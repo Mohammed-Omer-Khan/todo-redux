@@ -7,6 +7,7 @@ import './routes.css';
 
 const Tasks = lazy(() => import('./components/tasks/Tasks'));
 const AddNewTask = lazy(() => import('./components/tasks/AddNewTask'));
+const Themes = lazy(() => import('./components/themes/Themes'));
 
 const NotFound = _ => (
   <Result
@@ -24,6 +25,7 @@ const Layout = _ => (
       <Routes>
         <Route path="/" element={<Tasks />} />
         <Route path="/add-new-task" element={<AddNewTask />} />
+        <Route path="/themes" element={<Themes />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
